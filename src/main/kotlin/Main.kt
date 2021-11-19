@@ -13,7 +13,7 @@ suspend fun main() = coroutineScope  {
                 }
                 when(next) {
                     "1" -> simpleGame()
-//            "2" -> againstARock()
+                    "2" -> againstARock()
 //            "3" -> simulateGames()
                     null, "exit" -> return@launch
                     else -> {

@@ -1,5 +1,12 @@
 import kotlinx.coroutines.delay
 
+const val HAND_CHOICES = """
+* 1 - Rock
+* 2 - Paper
+* 3 - Scissors
+Chose your hand:
+"""
+
 suspend fun GameScope.intro() {
     print("Hello ")
     delay(800)

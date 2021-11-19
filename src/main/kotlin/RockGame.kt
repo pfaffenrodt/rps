@@ -1,11 +1,10 @@
 import kotlinx.coroutines.delay
 
-
-suspend fun GameScope.simpleGame() {
+suspend fun GameScope.againstARock() {
     printLine(HAND_CHOICES.trimIndent())
     val option = readLine() ?: return
     val yourHand = Hand.fromOption(option) ?: return
-    val opponentHand = Hand.randomHand()
+    val opponentHand = Hand.Rock
     delay(600)
     printLine("*ROCK*")
     delay(800)
