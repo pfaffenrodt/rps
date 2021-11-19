@@ -30,4 +30,8 @@ class TestGameScope(
             assertEquals(expected, actual, "unexpected game sequence")
         }
     }
+
+    override suspend fun delay(timeMillis: Long) {
+
+    }
 }

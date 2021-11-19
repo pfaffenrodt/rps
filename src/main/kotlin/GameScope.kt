@@ -2,6 +2,7 @@ interface GameScope {
     fun readLine(): String?
     fun printLine(message: String)
     fun print(message: String)
+    suspend fun delay(timeMillis: Long)
 }
 
 class DefaultGameScope(
@@ -16,5 +17,9 @@ class DefaultGameScope(
 
     override fun print(message: String) {
         kotlin.io.print(message)
+    }
+
+    override suspend fun delay(timeMillis: Long) {
+        kotlinx.coroutines.delay(timeMillis)
     }
 }
