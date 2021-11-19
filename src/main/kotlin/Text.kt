@@ -1,6 +1,6 @@
 import kotlinx.coroutines.delay
 
-suspend fun intro() {
+suspend fun GameScope.intro() {
     print("Hello ")
     delay(800)
     print("Player")
