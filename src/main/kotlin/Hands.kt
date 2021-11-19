@@ -1,6 +1,13 @@
 
 sealed class Hand(
+    /**
+     * option used as input argument to pick a hand
+     */
     val option: String,
+
+    /**
+     * will be used to print
+     */
     val label: String,
 ) {
 

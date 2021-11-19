@@ -18,7 +18,9 @@ suspend fun simulateGames() {
     delay(3000)
 }
 
-
+/**
+ * simulated scope were output is ignored and read is hardcoded by random hand
+ */
 class SimulatedGameScope: GameScope {
     override fun readLine(): String? {
         return Hand.randomHand().option

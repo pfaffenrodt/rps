@@ -1,5 +1,3 @@
-import kotlinx.coroutines.delay
-
 const val HAND_CHOICES = """
 * 1 - Rock
 * 2 - Paper
